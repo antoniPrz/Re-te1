@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "nombre": "David",
+    "apellido": "Suarez",
+    "activo": false
+  },
+  
+  {
+    "id": 2,
+    "nombre": "Pablo",
+    "apellido": "Raz",
+    "activo": false
+  },
+  {
+    "id": 3,
+    "nombre": "Augusto",
+    "apellido": "liz",
+    "activo": false
+  },
+  {
+    "id": 4,
+    "nombre": "Rey",
+    "apellido": "Dor",
+    "activo": false
+  },
+  {
+    "id": 5,
+    "nombre": "Pedro",
+    "apellido": "Ber",
+    "activo": false
+  },
+  {
+    "id": 6,
+    "nombre": "Saul",
+    "apellido": "Ser",
+    "activo": false
+  }
+]

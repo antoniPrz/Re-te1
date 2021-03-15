@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+import miObjTarea from "./samples/tareasjson.json";
+import miUsuario from "./samples/usuariosjson.json";
+import Tareas from "./componentes/Tareas"
+import Usuarios from "./componentes/Usuarios";
+
+class App extends Component {
+  metodoEstado = {
+    miObjTarea: miObjTarea,
+  };
+
+  metodoUsuario = {
+    miUsuario: miUsuario,
+  };
+
+  render() {
+    return (
+      <div>
+        <Usuarios propiedadUsuarios = {this.metodoUsuario.miUsuario}/>
+        <Tareas propiedadTareas = {this.metodoEstado.miObjTarea} />
+      </div>
+    );
+  }
 }
 
 export default App;
